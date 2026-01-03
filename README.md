@@ -2,7 +2,9 @@
 
 > My personal Claude Code stack: 84 skills, 24 commands, BRAIN network config, and the tools I use daily to ship code faster than I ever thought possible.
 
-Since November 30, 2022, I've spent ~5,000 hours building with AI tools—Codex, Claude, Lovable, Replit, Cursor, and more. This repo is the distillation of everything that actually stuck. No fluff, just what works.
+I've been using AI every single day since November 30, 2022—the day ChatGPT launched. In March 2025, I discovered vibe coding, and everything changed. I had an idea I felt convicted to build, and that sent me down a rabbit hole of figuring out how to actually ship software with AI as my copilot.
+
+After ~5,000 hours across Codex, Claude, Lovable, Replit, Cursor, and more, this repo is the distillation of everything that actually stuck. Now I want to share it with friends and anyone else who's curious about this way of building.
 
 ---
 
