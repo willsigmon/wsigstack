@@ -417,7 +417,7 @@ My `CLAUDE.md` instructs Claude to act as a "healing swarm of nanobots"—find e
 
 | | Project | Description |
 |:-:|:--------|:------------|
-| 🌿 | **[Leavn](https://testflight.apple.com/join/YOUR_CODE)** | iOS app for faith journeys. SwiftUI, iOS 18+, Swift 6. [Join the TestFlight →](https://testflight.apple.com/join/YOUR_CODE) |
+| 🌿 | **[Leavn](https://testflight.apple.com/join/Vz6KSEVf)** | iOS app for faith journeys. SwiftUI, iOS 18+, Swift 6. [Join the TestFlight →](https://testflight.apple.com/join/Vz6KSEVf) |
 
 </div>
 
