@@ -53,7 +53,7 @@ const report = await generate_quarterly_report("Q1", "2025", {
     grant_id: "NCDIT-DC-2024-HTI",
     period: "Q1 2025",
     date_generated: "2025-04-05",
-    contact: "admin@hubzonetech.org"
+    contact: "admin@example.org"
   },
 
   device_metrics: {

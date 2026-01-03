@@ -216,7 +216,7 @@ HTI works with:
 - We offer **free pickup** for large donations
 - Certificates of Destruction provided upon request
 - Tax-deductible donation (501(c)(3) status)
-- Contact: hubzonetech.org/donate
+- Contact: example.org/donate
 
 **2. Sponsor Training**
 - Fund digital literacy classes
@@ -243,16 +243,16 @@ HTI works with:
 
 ### Primary Contact
 **Will Sigmon** - Business Development
-Email: will@hubzonetech.org
-Website: hubzonetech.org
+Email: will@example.org
+Website: example.org
 
 ### General Inquiries
-Email: info@hubzonetech.org
+Email: info@example.org
 Phone: [Add if available]
 
 ### Online Presence
-- **Website**: www.hubzonetech.org
-- **Donate Portal**: hubzonetech.org/donate
+- **Website**: www.example.org
+- **Donate Portal**: example.org/donate
 - **Facebook**: /HTIHUBZone
 - **LinkedIn**: /company/htihubzone
 - **Instagram**: @hubzonetech
@@ -275,7 +275,7 @@ When generating HTI content, always:
 1. **Lead with impact** - Start with the "why" (lives changed, waste reduced)
 2. **Use the three-step process** - "You Donate. We Convert. They Receive."
 3. **Include specific metrics** - 3,500+ laptops, 2,500+ Chromebooks, 15 counties
-4. **End with clear CTA** - Visit hubzonetech.org/donate, contact Will, etc.
+4. **End with clear CTA** - Visit example.org/donate, contact Will, etc.
 5. **Maintain brand voice** - Optimistic, empowering, action-oriented
 
 ### Email Templates:
@@ -353,7 +353,7 @@ A: ChromeOS Flex is lightweight, secure, auto-updating, and extends the life of 
 A: Yes! While our Digital Champion Grant focuses on 15 counties, HTI has served communities throughout North Carolina and beyond. We're always open to new partnerships.
 
 **Q: How can my company partner with HTI?**
-A: Contact Will Sigmon (will@hubzonetech.org) to discuss corporate sponsorships, recurring device donations, employee engagement, or event partnerships.
+A: Contact Will Sigmon (will@example.org) to discuss corporate sponsorships, recurring device donations, employee engagement, or event partnerships.
 
 ---
 
@@ -362,7 +362,7 @@ A: Contact Will Sigmon (will@hubzonetech.org) to discuss corporate sponsorships,
 ### Example Queries:
 
 **"Write a LinkedIn post about HTI's impact"**
-→ Generate a professional post highlighting 3,500+ laptops collected, corporate CSR angle, with link to hubzonetech.org
+→ Generate a professional post highlighting 3,500+ laptops collected, corporate CSR angle, with link to example.org
 
 **"Explain HTI's data sanitization process"**
 → Detail NIST 800-88 and DOD 5220.22-M standards, Certificates of Destruction, federal-level security
@@ -404,4 +404,4 @@ Update this file when:
 **Skill Version**: 1.0
 **Last Updated**: November 4, 2025
 **Maintained By**: Will Sigmon / HTI Team
-**Primary Source**: hubzonetech.org, brand guide, organizational materials
+**Primary Source**: example.org, brand guide, organizational materials

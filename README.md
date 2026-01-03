@@ -411,6 +411,18 @@ My `CLAUDE.md` instructs Claude to act as a "healing swarm of nanobots"—find e
 
 ---
 
+## 📱 What I'm Building
+
+<div align="center">
+
+| | Project | Description |
+|:-:|:--------|:------------|
+| 🌿 | **[Leavn](https://testflight.apple.com/join/YOUR_CODE)** | iOS app for faith journeys. SwiftUI, iOS 18+, Swift 6. [Join the TestFlight →](https://testflight.apple.com/join/YOUR_CODE) |
+
+</div>
+
+---
+
 ## 💖 Support the Stack
 
 If this setup helps you ship faster, consider using my affiliate links:
@@ -439,9 +451,19 @@ If you find this useful, a star helps others discover it!
 
 ---
 
-## 📬 Questions?
+## 📬 Connect
 
-Reach out: **[wjsigmon@me.com](mailto:wjsigmon@me.com)**
+<div align="center">
+
+| | |
+|:-:|:-:|
+| 🌐 | **[willsigmon.media](https://willsigmon.media)** |
+| 𝕏 | **[@willsigmon](https://x.com/willsigmon)** |
+| 💼 | **[LinkedIn](https://linkedin.com/in/willsigmon)** |
+| 🐙 | **[GitHub](https://github.com/willsigmon)** |
+| 📧 | **[wjsigmon@me.com](mailto:wjsigmon@me.com)** |
+
+</div>
 
 ---
 

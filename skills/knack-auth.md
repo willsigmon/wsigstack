@@ -63,7 +63,7 @@ Handles API key and user token authentication for secure Knack API access. Manag
 **Example**:
 ```javascript
 const session = await login_user({
-  email: "admin@hubzonetech.org",
+  email: "admin@example.org",
   password: process.env.ADMIN_PASSWORD
 });
 
@@ -104,7 +104,7 @@ Required in `.env`:
 ```bash
 KNACK_APP_ID=your_app_id
 KNACK_API_KEY=your_api_key
-ADMIN_EMAIL=admin@hubzonetech.org
+ADMIN_EMAIL=admin@example.org
 ADMIN_PASSWORD=secure_password
 ```
 

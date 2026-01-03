@@ -6,8 +6,8 @@
 
 **Devices (Tailscale mesh):**
 - mba (MacBook Air) - Primary, runs discovery & sync
-- tower (Unraid) - Server, 100.119.19.61, containers: vibe, n8n, ai, photos, books, dock
-- office-pc - Desktop, 100.124.63.99, Ollama GPU host
+- tower (Unraid) - Server, containers: vibe, n8n, ai, photos, books, dock
+- office-pc - Desktop, Ollama GPU host
 - deck - Steam Deck, mobile
 
 **Sync:** ~/dotfiles-hub/claude/rules/ → rsync → all devices, 3x daily
@@ -31,16 +31,14 @@
 ## Active Projects
 
 **Leavn iOS App:**
-- Path: /Users/wsig/orchids-projects/LeavnOfficial-1
 - Stack: SwiftUI + XcodeGen, iOS 18+, Swift 6
 - Migration: TCA → native SwiftUI @Observable
 - DI: DIContainer.shared
 
 **212 Referral Network:**
-- Path: /Users/wsig/Projects/212ReferralNetwork
+- Stack: iOS app
 
 **Omi MCP:**
-- Path: /Users/wsig/Projects/omi-mcp
 - Stack: TypeScript, pnpm
 
 ## Philosophy

@@ -299,7 +299,7 @@ async function setup_uptime_monitoring() {
   const monitor = await createUptimeCheck({
     url: "https://hubdash.vercel.app",
     interval: 300, // 5 minutes
-    alert_contacts: ["admin@hubzonetech.org"]
+    alert_contacts: ["admin@example.org"]
   });
 
   return monitor;

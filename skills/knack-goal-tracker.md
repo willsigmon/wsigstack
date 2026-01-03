@@ -409,7 +409,7 @@ cron.schedule('0 9 1 1,4,7,10 *', async () => {
   const progress = await check_progress({ goal_targets: grant_goals });
 
   await sendEmail({
-    to: "board@hubzonetech.org",
+    to: "board@example.org",
     subject: `HTI ${quarter} Goal Progress Update`,
     html: render_progress_email(progress)
   });

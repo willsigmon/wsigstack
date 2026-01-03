@@ -463,7 +463,7 @@ cron.schedule('0 8 5 1,4,7,10 *', async () => {
 
   // Notify stakeholders
   await sendEmail({
-    to: "board@hubzonetech.org",
+    to: "board@example.org",
     subject: `${quarter} ${year} Quarterly Report Available`,
     body: `Download: ${pdf_url.url}`
   });
