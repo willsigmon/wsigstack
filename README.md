@@ -10,6 +10,8 @@
 
 *84 skills • 24 commands • BRAIN network config • Ready to clone*
 
+[Quick Start](#-quick-install) • [The Stack](#-the-stack) • [Skills](#-skill-categories) • [Philosophy](#-philosophy-nanobot-healing-swarm) • [Support](#-support-the-stack)
+
 ---
 
 </div>
@@ -42,6 +44,17 @@ wsigstack/
 ## ⚡ Quick Install
 
 ```bash
+# Clone and install in 30 seconds
+git clone https://github.com/willsigmon/wsigstack.git && cd wsigstack && \
+cp -r skills/* ~/.claude/skills/ && \
+cp -r commands/* ~/.claude/commands/ && \
+mkdir -p ~/.claude/rules && cp -r rules/* ~/.claude/rules/
+```
+
+<details>
+<summary><strong>📖 Step-by-step version</strong></summary>
+
+```bash
 # Clone the repo
 git clone https://github.com/willsigmon/wsigstack.git
 cd wsigstack
@@ -59,6 +72,8 @@ cp -r rules/* ~/.claude/rules/
 # Optional: Use my CLAUDE.md as a starting point
 cp brain/CLAUDE.md ~/.claude/CLAUDE.md
 ```
+
+</details>
 
 ---
 
@@ -112,6 +127,142 @@ cp brain/CLAUDE.md ~/.claude/CLAUDE.md
 | **GitHub** | PR reviews, issues, repo management |
 | **SQLite** | Local database queries |
 | **Puppeteer** | Browser automation |
+
+---
+
+## 📦 Skill Categories
+
+<div align="center">
+
+| Category | Count | Examples |
+|:---------|:-----:|:---------|
+| 🍎 **iOS/Swift** | 18 | `ios-build-test`, `swift-fix-compiler-errors`, `swiftui-debug` |
+| 🎵 **Audio/ML** | 6 | `audio-fingerprint-expert`, `audio-ml-validator` |
+| 🔧 **Debug/Fix** | 12 | `find-bug-root-cause`, `xcode-build-fixer`, `actor-isolation-fixer` |
+| 📊 **Knack** | 12 | `knack-reader`, `knack-dashboard-ai`, `knack-realtime` |
+| ⚙️ **n8n Workflows** | 5 | `n8n-workflow-builder`, `n8n-ai-features` |
+| 🏗 **Architecture** | 8 | `dependency-injection-setup`, `service-consolidator`, `tca-destroyer` |
+| 🚀 **DevOps** | 6 | `leavn-final-build-push`, `supabase-project-creator` |
+| 🎯 **Specialized** | 17 | `localization-helper`, `widget-extension-builder`, `rss-feed-parser-expert` |
+
+</div>
+
+<details>
+<summary><strong>📋 Full skill list (84 skills)</strong></summary>
+
+```
+accessibility-auditor      ios-simulator-reset       podcast-sync-architect
+actor-isolation-fixer      ios-visual-debug          preferences-store-expert
+ai-integration-expert      knack-auth                queue-manager-architect
+api-integration-builder    knack-cache-optimizer     reading-plan-expert
+audio-feature-validator    knack-dashboard-ai        rss-feed-parser-expert
+audio-features-expert      knack-data-cleaner        search-features-expert
+audio-fingerprint-expert   knack-devops              season-ui-architect
+audio-ml-validator         knack-exporter            sermon-features-expert
+bible-feature-expert       knack-filter-sort         service-consolidator
+cloudkit-sync-checker      knack-goal-tracker        supabase-project-creator
+cloudkit-sync-expert       knack-pagination          swift-binding-fixer
+codebase-health-reporter   knack-reader              swift-fix-compiler-errors
+community-features-expert  knack-realtime            swiftdata-migration-writer
+create-mega-skills-batch   knack-reporting-sync      swiftlint-autofix
+dead-code-eliminator       leavn-build-diagnostics   swiftui-best-practices
+dependency-injection-setup leavn-commit-machine      swiftui-debug
+error-handling-auditor     leavn-final-build-push    swiftui-visual-verifier
+feature-dependency-mapper  leavn-language-ux-verify  tca-destroyer
+find-bug-root-cause        leavn-ops-aso             tca-removal-audit
+guided-mode-expert         leavn-ops-content         test-coverage-analyzer
+hti_expert                 leavn-ops-release         userdefaults-migrator
+ios-build-test             leavn-ops-research        widget-extension-builder
+ios-feature-audit          localization-helper       xcode-build-analyzer
+ios-quick-fix              manus-ai-agent            xcode-build-fixer
+ios-simulator-debugger     modal-sheet-debugger
+navigation-debugger        multi-agent-coordinator
+performance-optimizer      n8n-ai-features
+performance-profiler       n8n-api-integration
+                           n8n-code-expressions
+                           n8n-hosting-config
+                           n8n-workflow-builder
+```
+
+</details>
+
+---
+
+## ⚡ Example Commands
+
+These are the slash commands you get. Type them in Claude Code:
+
+```bash
+/test          # Run tests with smart failure analysis
+/build         # Build project, fix errors automatically
+/deploy        # Deploy to Vercel/production
+/analyze       # Deep codebase analysis
+/cleanup       # Remove dead code, fix linting
+/git           # Smart git operations
+/explain       # Explain complex code
+/improve       # Suggest improvements
+/troubleshoot  # Debug issues systematically
+/security-review  # Security audit
+```
+
+<details>
+<summary><strong>📋 All 24 commands</strong></summary>
+
+| Command | What It Does |
+|:--------|:-------------|
+| `/test` | Run tests with smart failure analysis |
+| `/build` | Build project, fix errors automatically |
+| `/deploy` | Deploy to production |
+| `/analyze` | Deep codebase analysis |
+| `/cleanup` | Remove dead code, fix linting |
+| `/design` | UI/UX design assistance |
+| `/dev-setup` | Set up development environment |
+| `/document` | Generate documentation |
+| `/estimate` | Effort estimation |
+| `/explain` | Explain complex code |
+| `/feedback-triage` | Triage user feedback |
+| `/git` | Smart git operations |
+| `/improve` | Suggest improvements |
+| `/index` | Index codebase |
+| `/ios-api` | iOS API integration |
+| `/ios26-swiftui` | iOS 26 SwiftUI patterns |
+| `/load` | Load context/project |
+| `/migrate` | Migration assistance |
+| `/playwright-test` | E2E testing |
+| `/scan` | Security/code scan |
+| `/security-review` | Full security audit |
+| `/spawn` | Spawn parallel agents |
+| `/swift6-tca` | Swift 6 + TCA patterns |
+| `/troubleshoot` | Debug systematically |
+
+</details>
+
+---
+
+## 💡 Pro Tips
+
+<table>
+<tr>
+<td width="50%">
+
+### 🚀 Speed Tips
+
+- **Use `/spawn`** to run 20+ agents in parallel for complex tasks
+- **Check memories first** — `mcp__omi__get_memories` at session start
+- **Context at 60%?** — Run `/compact` before it degrades
+
+</td>
+<td width="50%">
+
+### 🧠 Workflow Tips
+
+- **Skills > Code** — Check if a skill exists before writing
+- **Voice + Terminal** — Dictate intent, let Claude write
+- **MCP everything** — If you do it twice, make it an MCP tool
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -259,6 +410,18 @@ If this setup helps you ship faster, consider using my affiliate links:
 | 🧠 | **Omi** | [omi.me/?ref=WILLSIGMON](https://www.omi.me/?ref=WILLSIGMON) |
 | 🎤 | **Typeless** | [typeless.com/?via=wsig](https://www.typeless.com/?via=wsig) |
 | 🗣 | **Wispr Flow** | [wisprflow.ai/r?WILL48](https://wisprflow.ai/r?WILL48) |
+
+</div>
+
+---
+
+## 🌟 Star History
+
+If you find this useful, a star helps others discover it!
+
+<div align="center">
+
+[![Star History Chart](https://api.star-history.com/svg?repos=willsigmon/wsigstack&type=Date)](https://star-history.com/#willsigmon/wsigstack&Date)
 
 </div>
 
