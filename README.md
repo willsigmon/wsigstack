@@ -1,8 +1,10 @@
 # wsigstack
 
-> My complete Claude Code stack: 84 skills, 24 commands, BRAIN network config, and the tools I use daily.
+> My personal Claude Code stack: 84 skills, 24 commands, BRAIN network config, and the tools I use daily to ship code faster than I ever thought possible.
 
-This is my actual working setup for Claude Code. No fluff, just what I use every day to build iOS apps, manage servers, and ship code faster than I ever thought possible.
+Since November 30, 2022, I've spent ~5,000 hours building with AI tools—Codex, Claude, Lovable, Replit, Cursor, and more. This repo is the distillation of everything that actually stuck. No fluff, just what works.
+
+---
 
 ## What's Inside
 
@@ -15,61 +17,98 @@ wsigstack/
 └── examples/    # Setup examples and templates
 ```
 
+---
+
 ## Quick Install
 
 ```bash
-# Clone
+# Clone the repo
 git clone https://github.com/willsigmon/wsigstack.git
+cd wsigstack
 
 # Copy skills to Claude Code
-cp -r wsigstack/skills/* ~/.claude/skills/
+cp -r skills/* ~/.claude/skills/
 
 # Copy commands
-cp -r wsigstack/commands/* ~/.claude/commands/
+cp -r commands/* ~/.claude/commands/
 
 # Copy rules (auto-loaded by Claude Code)
 mkdir -p ~/.claude/rules
-cp -r wsigstack/rules/* ~/.claude/rules/
+cp -r rules/* ~/.claude/rules/
 
 # Optional: Use my CLAUDE.md as a starting point
-cp wsigstack/brain/CLAUDE.md ~/.claude/CLAUDE.md
+cp brain/CLAUDE.md ~/.claude/CLAUDE.md
 ```
 
-## My Stack
+---
 
-### The Core (What I Actually Use)
+## The Stack
 
-| Tool | What It Does | Link |
-|------|--------------|------|
-| **Claude Code + Opus 4.5** | The brain. CLI-first, no IDE needed. | [claude.ai/code](https://claude.ai/code) |
-| **Omi** | AI wearable + memory MCP. Captures conversations, syncs context across sessions. | [omi.me](https://www.omi.me/?ref=WILLSIGMON) |
-| **Typeless** | Dictation that actually works. I talk, it types. | [typeless.com](https://www.typeless.com/?via=wsig) |
-| **Wispr Flow** | Voice-to-code. Speak your intentions, get code. | [wisprflow.ai](https://wisprflow.ai/r?WILL48) |
-| **Ghostty** | Fast terminal. That's it. | [ghostty.org](https://ghostty.org) |
+### The Brain
+
+| Tool                              | What It Does                                                        | Link                                              |
+|-----------------------------------|---------------------------------------------------------------------|---------------------------------------------------|
+| Claude Code + Opus 4.5            | The brain. CLI-first AI coding. This is where the magic happens.    | [claude.ai/code](https://claude.ai/code)          |
+| Omi                               | AI wearable + MCP server. Captures context, syncs memories.         | [omi.me](https://www.omi.me/?ref=WILLSIGMON)      |
+
+### Voice Input (Pick Your Favorite)
+
+| Tool                              | What It Does                                                        | Link                                              |
+|-----------------------------------|---------------------------------------------------------------------|---------------------------------------------------|
+| Typeless                          | Dictation that actually works. I talk, it types.                    | [typeless.com](https://www.typeless.com/?via=wsig)|
+| Wispr Flow                        | Voice-to-code. Speak your intentions, get code.                     | [wisprflow.ai](https://wisprflow.ai/r?WILL48)     |
+
+*I use both—just pick whichever clicks for you.*
+
+### Terminal
+
+| Tool                              | What It Does                                                        | Link                                              |
+|-----------------------------------|---------------------------------------------------------------------|---------------------------------------------------|
+| Ghostty                           | Fast, minimal, GPU-accelerated terminal. Best I've found.           | [ghostty.org](https://ghostty.org)                |
+
+*Ghostty replaced Terminal.app for me entirely. If you haven't tried it, you should.*
+
+### IDE (Optional—I Rarely Need One)
+
+| Tool                              | What It Does                                                        | Link                                              |
+|-----------------------------------|---------------------------------------------------------------------|---------------------------------------------------|
+| Cursor Max                        | AI-native IDE. $200/mo for unlimited. Good for visual work.         | [cursor.com](https://cursor.com)                  |
+| VS Code Insiders                  | Free. Claude extension available. Solid fallback.                   | [code.visualstudio.com](https://code.visualstudio.com/insiders/) |
+
+*Honestly? Claude Code in terminal handles 95% of my work. IDEs are for when I need to see things visually.*
 
 ### Infrastructure
 
-| Tool | What For |
-|------|----------|
-| **GitHub** | Code lives here |
-| **Vercel** | Deploy frontend, serverless functions |
-| **Supabase** | Postgres + auth + realtime |
+| Tool                              | What It Does                                                        | Link                                              |
+|-----------------------------------|---------------------------------------------------------------------|---------------------------------------------------|
+| GitHub                            | Code lives here. PRs, issues, Actions.                              | [github.com](https://github.com)                  |
+| Vercel                            | Deploy frontend, serverless functions. Pro plan.                    | [vercel.com](https://vercel.com)                  |
+| Supabase                          | Postgres + Auth + Realtime + Storage. Pro plan.                     | [supabase.com](https://supabase.com)              |
 
-### Occasional Use
+### MCP Servers I Use
 
-- **Cursor** / **VS Code Insiders** - Only when I need the Claude extension for visual stuff
-- But honestly? Claude Code in terminal handles 95% of my work
+| Server                            | Purpose                                                             |
+|-----------------------------------|---------------------------------------------------------------------|
+| Omi                               | Memory persistence across sessions                                  |
+| Sosumi                            | Apple documentation (essential for iOS dev)                         |
+| GitHub                            | PR reviews, issues, repo management                                 |
+| SQLite                            | Local database queries                                              |
+| Puppeteer                         | Browser automation                                                  |
+
+---
 
 ## The BRAIN Network
 
-My setup syncs Claude context across multiple machines (MacBook, tower server, desktop, Steam Deck) via Tailscale. The `brain/` folder has the configs.
+My setup syncs Claude context across multiple machines via Tailscale. The `brain/` folder has the configs.
 
 **Key files:**
-- `CLAUDE.md` - Master instructions that load on every session
-- `BRAIN-NETWORK-SYNC.md` - How the multi-device sync works
-- `yolo-yolox-config.md` - My "nanobot healing swarm" autonomous mode
+- `CLAUDE.md` — Master instructions that load on every session
+- `BRAIN-NETWORK-SYNC.md` — How the multi-device sync works
+- `yolo-yolox-config.md` — My "nanobot healing swarm" autonomous mode
 
-## Adding More Skills
+---
+
+## Adding Your Own Skills
 
 Skills are just markdown files. Create one:
 
@@ -89,26 +128,31 @@ What this skill does
 Step by step what Claude should do
 ```
 
-Save to `~/.claude/skills/` and it's available immediately.
+Save to `~/.claude/skills/` and it's available immediately. No restart needed.
 
-## Integrating Omi with Your Stack
+---
 
-Omi is the secret weapon. It captures your conversations and creates memories that persist across Claude sessions.
+## Integrating Omi
 
-### Setup Omi MCP
+Omi is the secret weapon—it captures conversations and creates memories that persist across Claude sessions.
+
+### Setup
 
 ```bash
-# Install the Omi MCP server
-git clone https://github.com/BasedHardware/omi-mcp
-cd omi-mcp
+# Clone the Omi MCP server
+git clone https://github.com/BasedHardware/omi
+cd omi/plugins/mcp
 pnpm install && pnpm build
+```
 
-# Add to Claude Code MCP config (~/.claude/mcp.json or settings)
+Add to your Claude Code MCP config:
+
+```json
 {
   "mcpServers": {
     "omi": {
       "command": "node",
-      "args": ["/path/to/omi-mcp/dist/index.js"],
+      "args": ["/path/to/omi/plugins/mcp/dist/index.js"],
       "env": {
         "OMI_API_KEY": "your-api-key"
       }
@@ -117,28 +161,30 @@ pnpm install && pnpm build
 }
 ```
 
-### What Omi Gives You
+### What It Gives You
 
-- `mcp__omi__get_memories` - Retrieve facts Claude knows about you
-- `mcp__omi__create_memory` - Save important context
-- `mcp__omi__get_conversations` - Access past conversation transcripts
-- `mcp__omi__get_conversation_by_id` - Deep dive into specific conversations
+| Tool                              | What It Does                                                        |
+|-----------------------------------|---------------------------------------------------------------------|
+| `mcp__omi__get_memories`          | Retrieve facts Claude knows about you                               |
+| `mcp__omi__create_memory`         | Save important context for later                                    |
+| `mcp__omi__get_conversations`     | Access past conversation transcripts                                |
+| `mcp__omi__get_conversation_by_id`| Deep dive into specific conversations                               |
 
 I start every session checking memories. Claude picks up exactly where we left off.
 
+---
+
 ## Adding More MCP Servers
 
-MCP servers extend Claude's capabilities. Here's how to add them:
+MCP servers extend Claude's capabilities.
 
-### 1. Find or Build an MCP Server
+### 1. Find or Build a Server
 
-- [MCP Server Registry](https://github.com/modelcontextprotocol/servers)
-- Or build your own with the MCP SDK
+Check the [MCP Server Registry](https://github.com/modelcontextprotocol/servers) or build your own.
 
-### 2. Add to Your Config
+### 2. Add to Config
 
 ```json
-// ~/.claude/mcp.json
 {
   "mcpServers": {
     "your-server": {
@@ -154,42 +200,44 @@ MCP servers extend Claude's capabilities. Here's how to add them:
 
 ### 3. Restart Claude Code
 
-The new tools appear automatically.
+New tools appear automatically.
 
-### MCP Servers I Use
-
-| Server | Purpose |
-|--------|---------|
-| **Omi** | Memory persistence across sessions |
-| **Sosumi** | Apple documentation (essential for iOS dev) |
-| **GitHub** | PR reviews, issues, repo management |
-| **Brave Search** | Web search from CLI |
-| **SQLite** | Database queries |
+---
 
 ## Philosophy: Nanobot Healing Swarm
 
-My CLAUDE.md instructs Claude to act as a "healing swarm of nanobots" - find every bug, scrub every infection, optimize every inefficiency. It's aggressive but it works.
+My `CLAUDE.md` instructs Claude to act as a "healing swarm of nanobots"—find every bug, scrub every infection, optimize every inefficiency. It's aggressive, but it works.
 
-Key principles:
-- **Tools first** - Check if MCP/skill can do it before writing code
-- **Parallel agents** - Spawn 20+ agents for complex tasks
-- **Context is attention** - Manage the 60% threshold, use `/compact`
-- **Memory graph** - Use Omi to maintain continuity across sessions
+**Key principles:**
+- **Tools first** — Check if MCP/skill can handle it before writing code
+- **Parallel agents** — Spawn 20+ agents for complex tasks
+- **Context is attention** — Manage the 60% threshold, use `/compact`
+- **Memory graph** — Use Omi to maintain continuity across sessions
+
+---
 
 ## Support the Stack
 
 If this setup helps you ship faster, consider using my affiliate links:
 
-- **[Omi](https://www.omi.me/?ref=WILLSIGMON)** - The AI wearable that changed how I work
-- **[Typeless](https://www.typeless.com/?via=wsig)** - Dictation that just works
-- **[Wispr Flow](https://wisprflow.ai/r?WILL48)** - Voice-to-code magic
-
-Questions? [wjsigmon@me.com](mailto:wjsigmon@me.com)
-
-## License
-
-MIT - Use it, modify it, make it yours.
+| Tool                              | Link                                                                |
+|-----------------------------------|---------------------------------------------------------------------|
+| Omi                               | [omi.me/?ref=WILLSIGMON](https://www.omi.me/?ref=WILLSIGMON)        |
+| Typeless                          | [typeless.com/?via=wsig](https://www.typeless.com/?via=wsig)        |
+| Wispr Flow                        | [wisprflow.ai/r?WILL48](https://wisprflow.ai/r?WILL48)              |
 
 ---
 
-*Built with Claude Code Opus 4.5 and way too much coffee.*
+## Questions?
+
+Reach out: [wjsigmon@me.com](mailto:wjsigmon@me.com)
+
+---
+
+## License
+
+MIT — Use it, modify it, make it yours.
+
+---
+
+*Built with Claude Code Opus 4.5 and ~5,000 hours of figuring out what actually works.*
