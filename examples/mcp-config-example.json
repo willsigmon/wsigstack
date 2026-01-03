@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "omi": {
+      "command": "node",
+      "args": ["/path/to/omi/plugins/mcp/dist/index.js"],
+      "env": {
+        "OMI_API_KEY": "your-api-key-here"
+      }
+    },
+    "sosumi": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/sosumi-mcp"],
+      "env": {}
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_your_token_here"
+      }
+    },
+    "sqlite": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sqlite", "/path/to/your/database.db"],
+      "env": {}
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-puppeteer"],
+      "env": {}
+    }
+  }
+}

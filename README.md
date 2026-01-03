@@ -36,7 +36,7 @@ wsigstack/
 ├── ⚡ commands/    24 slash commands (/test, /deploy, /build, etc.)
 ├── 📏 rules/       LSP mastery, context engineering, iOS patterns
 ├── 🔮 brain/       CLAUDE.md + BRAIN network multi-device sync
-└── 📚 examples/    Setup examples and templates
+└── 📚 examples/    Starter templates (skill, MCP config, CLAUDE.md)
 ```
 
 ---
@@ -280,6 +280,18 @@ My setup syncs Claude context across multiple machines via Tailscale.
 | `yolo-yolox-config.md` | My "nanobot healing swarm" autonomous mode |
 
 </details>
+
+---
+
+## 📚 Starter Templates
+
+The `examples/` folder has templates to get you started:
+
+| Template | Purpose |
+|:---------|:--------|
+| `skill-template.md` | Blueprint for creating new skills |
+| `mcp-config-example.json` | Sample MCP server configuration |
+| `CLAUDE-starter.md` | Starter CLAUDE.md for your setup |
 
 ---
 
